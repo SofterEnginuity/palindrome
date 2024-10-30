@@ -23,6 +23,7 @@ const server = http.createServer(function(req, res) {
       }
       else if (page == '/style.css'){
         fs.readFile('style.css', function(err, data) {
+          res.writeHead(200, {'Content-Type': 'style/css'});
           res.write(data);
           res.end();
         });
@@ -67,6 +68,6 @@ const server = http.createServer(function(req, res) {
       }
 });
 
-server.listen(7000);
+server.listen(8000);
 //need to get displaying in the dom
 
