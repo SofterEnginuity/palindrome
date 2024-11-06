@@ -4,9 +4,6 @@
 Palindrome Checker
 Check to see if any word is a palindrome (the same forward and backwards)
 
-**Link to project:** 
-
-![alt tag]()
 
 ## How It's Made:
 HTML, CSS, Javascript & Node
