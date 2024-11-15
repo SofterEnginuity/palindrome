@@ -4,9 +4,11 @@
 Palindrome Checker
 Check to see if any word is a palindrome (the same forward and backwards)
 
-**Link to project:** https://wordmirror.netlify.app/
+**Link to project:** 
+https://wordmirror.netlify.app/
 
-![alt tag]()
+
+<img src="https://i.imgur.com/cZUZiqI.png" height="40%" width="40%">
 
 ## How It's Made:
 HTML, CSS, Javascript & Node
