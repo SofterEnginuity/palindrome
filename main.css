@@ -4,5 +4,40 @@ body {
     justify-content: flex-end;
     align-items: center;
     text-align:center;
-    margin-top:15em;
+  
   }
+  main{
+    display:flex;
+    justify-content:space-evenly;
+  }
+  img{
+    height: 703px;
+    width: 490px;
+  }
+  .container{
+    width:100%;
+  }
+  .content{
+    margin-top:40px;
+    align-content: center;
+
+    margin-top: 40px;
+    width: 30%;
+    align-self: center;
+  }
+  h4{
+    margin-top:5px;
+    font-size:25px;
+  }
+  p{
+    font-size:20px;
+    padding-bottom:20px;
+   
+  }
+  h1{
+   font-size:40px;
+  }
+   h3{
+    font-size:40px;  
+    }
+    

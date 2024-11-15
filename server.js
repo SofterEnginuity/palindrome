@@ -22,7 +22,7 @@ const server = http.createServer(function (req, res) {
     });
   } else if (page == "/main.css") {
     fs.readFile("main.css", function (err, data) {
-      res.writeHead(200, { "Content-Type": "style/css" });
+      res.writeHead(200, { "Content-Type": "text/css" });
       res.write(data);
       res.end();
     });
@@ -32,11 +32,27 @@ const server = http.createServer(function (req, res) {
       res.write(data);
       res.end();
     });
-  } else if (page == "/api") {
+
+  } else if (page == "/palindrome.png") {
+    fs.readFile("palindrome.png", function (err, data) {
+      if (err) {
+        res.writeHead(404, { "Content-Type": "text/plain" });
+        res.end("Image not found");
+      } else {
+        res.writeHead(200, { "Content-Type": "image/png" });
+        res.write(data);
+        res.end();
+      }
+    });
+  }
+  else if (page == "/api") {
     console.log(params);
+
+
 
     const revWord = params.word.split("").reverse("");
     const result = revWord.join("");
+
 
     if ("word" in params) {
       if (params.word == `${result}`) {
